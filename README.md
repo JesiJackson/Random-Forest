@@ -1,8 +1,55 @@
-# Random-Forest
+## 🌲 Loan Default Prediction Using Random Forest
 
-You work for a company that provides car loans with interest rates. Recently, loan underwriters have been issuing a significant number of loans that end up defaulting. As a result, there’s a need to improve the underwriting process. To address this issue, you decide to use a random forest algorithm to enhance the accuracy and reliability of loan approvals.
+You work for a company that provides car loans with interest rates. Recently, loan underwriters have been issuing a significant number of loans that end up defaulting. As a result, there’s a need to improve the underwriting process. To address this issue, you decide to use a **Random Forest algorithm** to enhance the accuracy and reliability of loan approvals.
 
-This research employed a binary variable, default payment (Yes = 1, No = 0), as the response variable. This study reviewed the literature and used the following 23 variables as explanatory variables:
+---
+
+### 🧪 Project Overview
+
+This research employed a binary target variable, **default payment** (`1 = Yes`, `0 = No`), and used 23 explanatory variables derived from demographic information and financial behavior, including:
+
+* **Credit amount**, **age**, **gender**, **education**, and **marital status**
+* **Payment history** over 6 months
+* **Monthly bill statements** and **payment amounts**
+
+---
+
+### 📊 What You'll Find in This Repository
+
+* **Data Preprocessing**: Handling categorical values, missing data, and scaling as needed
+* **Exploratory Data Analysis (EDA)**: Visualizing variable distributions, correlations, and class imbalance
+* **Random Forest Modeling**: Training, tuning hyperparameters, and applying the model to classify defaults
+* **Model Evaluation**:
+
+  * Confusion matrix
+  * Accuracy, precision, recall, and F1-score
+  * Feature importance ranking
+
+---
+
+### ✅ Key Results
+
+* The **Random Forest classifier achieved high accuracy**, effectively distinguishing between default and non-default customers.
+* **Precision and recall** metrics were balanced, showing the model's reliability in identifying high-risk clients.
+* The most important features included:
+
+  * **Repayment status in recent months**
+  * **Amount of credit given**
+  * **Bill statement history**
+
+These results suggest that the Random Forest model can support better decision-making in the loan underwriting process by identifying potential defaulters more accurately.
+
+---
+
+### 🧰 Tools & Technologies
+
+* **Pandas**, **NumPy**, **Scikit-learn**, **Matplotlib**, **Seaborn**
+
+---
+
+
+
+More information about variables:
 
 X1: Amount of the given credit (NT dollar): it includes both the individual consumer credit and his/her family (supplementary) credit.
 
